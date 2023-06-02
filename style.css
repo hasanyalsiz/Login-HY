@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background: radial-gradient( circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(126, 109, 124) 15.9%, rgb(26, 19, 13) 24.4%, rgb(92, 95, 97) 24.5%, rgb(174, 188, 197) 66%);
+}
+
+.container {
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.container .logo img {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 69%;
+    top: 20px;
+    border-radius: 50%;
+    border: 5px solid rgb(240, 99, 6);
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+.container .logo .gif {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 69%;
+    top: 20px;
+    border-radius: 50%;
+    border: 5px solid rgb(240, 99, 6);
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+.container .logo img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    border: 3px solid rgb(240, 99, 6);
+    transition: all .5s ease-in-out;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.container form .title {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.container form .title:before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    bottom: 2px;
+    left: 0;
+    border-radius: 5px;
+    background: #1da1f2;
+}
+
+.container form .input-box {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+}
+
+.container form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+
+.container form .input-box input:focus::placeholder {
+    visibility: hidden;
+}
+
+.container form .underline:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+
+.container form .underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.container form .input-box input:focus~.underline:after,
+.container form .input-box:valid~.underline:after {
+    transform: scaleX(1);
+    transform-origin: left;
+    background: red;
+}
+
+.container form .button {
+    margin: 40px 0 20px 0;
+}
+
+.container form .input-box input[type="submit"] {
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background: red;
+    transition: all .3s ease;
+}
+
+.container form .input-box input[type="submit"]:hover {
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    color: rgb(202, 216, 198);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.container .text {
+    font-size: 14px;
+    text-align: center;
+}
+
+.container .github a,
+.container .google a,
+.container .twitter a,
+.container .facebook a {
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 5px;
+}
+
+.container .github a {
+    background: black;
+    margin: 20px 0 15px 0;
+}
+
+.container .github a:hover {
+    background: rgb(126, 106, 106);
+}
+
+.container .google a {
+    margin: 20px 0 15px 0;
+    background: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+    color: black;
+}
+
+.container .google a:hover {
+    background-color: rgb(126, 106, 106);
+}
+
+.container .google a i {
+    color: white;
+}
+
+.container .twitter a {
+    background: #1da1f2;
+    margin: 20px 0 15px 0;
+}
+
+.container .twitter a:hover {
+    background-color: rgb(126, 106, 106);
+}
+
+.container .facebook a {
+    background: #4267b2;
+    margin: 20px 0 15px 0;
+}
+
+.container .facebook a:hover {
+    background-color: rgb(126, 106, 106);
+}
+
+.container .github i,
+.container .google i,
+.container .twitter i,
+.container .facebook i {
+    font-size: 22px;
+    padding-right: 28px;
+    margin-left: 22px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.button {
+    --border-size: 3px;
+    --border-angle: 0turn;
+    background-image: conic-gradient(from var(--border-angle), rgb(180, 224, 107), rgb(125, 182, 79) 50%, rgb(56, 224, 33)), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+    background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+    animation: bg-spin 3s linear infinite;
+}
+
+@-webkit-keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
