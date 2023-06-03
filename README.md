@@ -1,6 +1,6 @@
 # Login-HY
 
-![](screen.gif)
+![](img/screen.gif)
 
 Giriş Sayfası
 Bu proje, CSS ve HTML kullanılarak oluşturulan bir giriş sayfasını içerir. Sayfa, kullanıcıların giriş yapmalarını sağlayan bir arayüz sunar ve aynı zamanda animasyonlu butonlar, resimler ve GIF'ler içerir. GitHub, Facebook, Google ve Twitter'dan giriş yapma seçeneklerini sunar.
