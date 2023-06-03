@@ -13,7 +13,7 @@ GitHub, Facebook, Google ve Twitter ile giriş yapma seçenekleri
 
 Bu depoyu klonlayın:
 
--git clone https://github.com/KullaniciAdiniz/proje-adiniz.git
+-git clone https://github.com/KullaniciAdiniz/Login-HY.git
 
 -İndirilen dizine gidin:
 cd Login-HY
