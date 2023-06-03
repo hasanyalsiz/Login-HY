@@ -30,7 +30,7 @@ Sayfada bulunan resimler ve GIF'ler sayesinde görsel bir deneyim yaşayabilirsi
 -Katkıda Bulunma
 Kat contributionsaltmaları için adım adım bir yönergeli ekleyebilirsiniz. İşte örnek bir yönerge:
 
-Bu projeyi kendi hesabınıza çatallayın.
+Bu projeyi kendi hesabınıza folklayın.
 Yeni bir özellik veya düzeltme için bir dal oluşturun: git checkout -b yeni-özellik
 Değişikliklerinizi yapın ve bunları birleştirilebilir bir şekilde taahhüt edin: git commit -m 'Yeni özellik ekle'
 Dalınızı ana dal ile birleştirin: git merge master
